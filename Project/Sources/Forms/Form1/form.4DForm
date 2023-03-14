@@ -1,0 +1,124 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onLosingFocus",
+		"onGettingFocus",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"left": 13,
+					"top": 13,
+					"width": 146,
+					"height": 253,
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"dataSource": "Form:C1466.col1",
+					"listboxType": "collection",
+					"rowFillSource": "backgroundColor(\"List Box\")",
+					"dragging": "custom",
+					"hideSystemHighlight": true,
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Header1"
+							},
+							"name": "Column1",
+							"footer": {
+								"name": "Footer1"
+							},
+							"dataSource": "This:C1470.value",
+							"enterable": false
+						}
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"left": 174,
+					"top": 13,
+					"width": 145,
+					"height": 253,
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.col2",
+					"rowFillSource": "backgroundColor(\"List Box1\")",
+					"metaSource": "metaInfo",
+					"dragging": "custom",
+					"hideSystemHighlight": true,
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Header2"
+							},
+							"name": "Column2",
+							"footer": {
+								"name": "Footer2"
+							},
+							"dataSource": "This:C1470.value",
+							"events": [
+								"onLosingFocus",
+								"onGettingFocus"
+							],
+							"enterable": false
+						}
+					]
+				}
+			}
+		}
+	],
+	"geometryStamp": 25,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}
