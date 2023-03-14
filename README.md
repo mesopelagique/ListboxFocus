@@ -16,6 +16,6 @@ So a generic solution could be to simulate an `On After Losing Focus` event:
 
 Code in [Project/Sources/Forms/Form1/method.4dm](Project/Sources/Forms/Form1/method.4dm)
 
-PS: no focus lost even if window loose focus, maybe there is a way to fix that
+PS: no focus lost event if the window loose the focus, so maybe there is a way to fix that too
 
 PS2: an other solution could be to refresh all elements than the one that receive `On Getting Focus`, but a lot of things will be refresh for nothing. So maybe a list of element you want to see refreshed.
