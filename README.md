@@ -9,7 +9,7 @@ To set the color I use [Background Color Expression](https://doc4d.github.io/doc
 - After losing the focus the listbox do not refresh and do not call `Background Color Expression`.
 - If we refresh in "On Losing Focus" the object has the focus, so it will do not take the no focus color
 
-So a generic solution could be to simulate an `On After Losing Focus` event:
+So a generic solution could be to simulate an `On After Losing Focus` event(that do not exists):
 - in `On Losing Focus` launch a timer and keep in a collection the element to refresh
 - then in `On Timer` consume the collection of element to refresh and of course refresh it
   - to refresh for instance I get the object value and set it again
