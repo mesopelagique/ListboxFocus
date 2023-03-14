@@ -12,7 +12,7 @@ To set the color I use [Background Color Expression](https://doc4d.github.io/doc
 So a generic solution could be to simulate an `On After Losing Focus` event:
 - in `On Losing Focus` launch a timer and keep in a collection the element to refresh
 - then in `On Timer` consume the collection of element to refresh and of course refresh it
-- to refresh for instance I get the object value and set it again
+  - to refresh for instance I get the object value and set it again
 
 Code in [Project/Sources/Forms/Form1/method.4dm](Project/Sources/Forms/Form1/method.4dm)
 
